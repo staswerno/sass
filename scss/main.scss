@@ -12,6 +12,25 @@
 	@return map-get($font-weights, $weight-name);
 }
 
+// mixin
+// see @include in .main
+// functions should be used to compute/return values
+// mixins should define styles
+
+@mixin flexCenter($direction) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+	@if $light-theme {
+		background: lighten($primary-color, 100%);
+		color: darken($text-color, 100%);
+	}
+}
+
 body {
 	background: $primary-color;
 	color: $text-color;
@@ -23,6 +42,7 @@ body {
 // (try with and without and look at difference in css)
 
 .main {
+	@include flexCenter(row);
 	width: 80%;
 	margin: 0 auto;
 
@@ -33,4 +53,8 @@ body {
 			color: pink;
 		}
 	}
+}
+
+.light {
+	@include theme($light-theme: true);
 }

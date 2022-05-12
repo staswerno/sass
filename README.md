@@ -23,3 +23,9 @@ don't compile into css, compile into actual value
 modularise using partials
 sass file named with leading underscore
     ignored by compiler
+
+## functions vs mixins
+
+functions should be used to compute/return values
+mixins should define styles
+mixins good for light/dark themes
