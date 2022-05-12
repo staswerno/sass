@@ -32,7 +32,7 @@ functions should be used to compute/return values
 mixins should define styles
 mixins good for light/dark themes
 
-## rememeber
+## remember
 
 - variables
 - maps
