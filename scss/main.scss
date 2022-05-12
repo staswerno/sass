@@ -1,3 +1,9 @@
+// variables
+
+$primary-color: lightgrey;
+$accent-color: hotpink;
+$text-color: black;
+
 body {
-	background: hotpink;
+	background: $primary-color;
 }

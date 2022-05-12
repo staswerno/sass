@@ -11,3 +11,9 @@ there are 2 sass filetypes:
 
 to run: click on 'watch sass' at bottom of ide
 don't modify the css file!
+
+## variables
+
+sass variables came first
+don't compile into css, compile into actual value
+100% browser compatibility
