@@ -1,9 +1,19 @@
 // variables
 
-$primary-color: lightgrey;
+$primary-color: darkgrey;
 $accent-color: hotpink;
-$text-color: black;
+$text-color: aliceblue;
+
+// maps (bit like objects - key/value pairs)
+
+$font-weights: (
+	"regular": 400,
+	"medium": 500,
+	"bold": 700,
+);
 
 body {
 	background: $primary-color;
+	color: $text-color;
+	font-weight: map-get($font-weights, bold);
 }

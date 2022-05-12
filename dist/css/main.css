@@ -1,3 +1,5 @@
 body {
-  background: lightgrey;
+  background: darkgrey;
+  color: aliceblue;
+  font-weight: 700;
 }
