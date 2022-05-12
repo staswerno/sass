@@ -1,8 +1,16 @@
 // partials
 // don't have to put underscore or extension
+// good for modular components and working in teams
 
 @import "./resets";
 @import "./variables";
+
+// functions
+// see .main for usage
+
+@function weight($weight-name) {
+	@return map-get($font-weights, $weight-name);
+}
 
 body {
 	background: $primary-color;
@@ -19,7 +27,7 @@ body {
 	margin: 0 auto;
 
 	#{&}__paragraph {
-		font-weight: map-get($font-weights, bold);
+		font-weight: weight(bold);
 
 		&:hover {
 			color: pink;
