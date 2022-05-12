@@ -17,3 +17,9 @@ don't modify the css file!
 sass variables came first
 don't compile into css, compile into actual value
 100% browser compatibility
+
+## partials
+
+modularise using partials
+sass file named with leading underscore
+    ignored by compiler

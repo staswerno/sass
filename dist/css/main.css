@@ -1,5 +1,24 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: darkgrey;
   color: aliceblue;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .main__paragraph {
   font-weight: 700;
+}
+
+.main .main__paragraph:hover {
+  color: pink;
 }

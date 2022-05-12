@@ -1,19 +1,28 @@
-// variables
+// partials
+// don't have to put underscore or extension
 
-$primary-color: darkgrey;
-$accent-color: hotpink;
-$text-color: aliceblue;
-
-// maps (bit like objects - key/value pairs)
-
-$font-weights: (
-	"regular": 400,
-	"medium": 500,
-	"bold": 700,
-);
+@import "./resets";
+@import "./variables";
 
 body {
 	background: $primary-color;
 	color: $text-color;
-	font-weight: map-get($font-weights, bold);
+}
+
+// nesting (see p)
+// & === parent
+// interpolation makes sure & is nested not on its own
+// (try with and without and look at difference in css)
+
+.main {
+	width: 80%;
+	margin: 0 auto;
+
+	#{&}__paragraph {
+		font-weight: map-get($font-weights, bold);
+
+		&:hover {
+			color: pink;
+		}
+	}
 }
