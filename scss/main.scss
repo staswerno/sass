@@ -47,12 +47,17 @@ body {
 // interpolation makes sure & is nested not on its own
 // (try with and without and look at difference in css)
 
+// extend
+
+// math operations (don't need calc() - see width)
+// can't mix types (all have to be px, % etc)
+
 .main {
 	@include flexCenter(row);
-	width: 80%;
+	width: 80% - 40%;
 	margin: 0 auto;
 
-	#{&}__paragraph {
+	#{&}__paragraph1 {
 		font-weight: weight(bold);
 
 		&:hover {
@@ -62,6 +67,13 @@ body {
 
 	@include mobile {
 		flex-direction: column;
+	}
+	#{&}__paragraph2 {
+		@extend .main__paragraph1;
+
+		&:hover {
+			color: $accent-color;
+		}
 	}
 }
 

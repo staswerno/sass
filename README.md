@@ -1,5 +1,7 @@
 # sass notes
 
+docs: https://sass-lang.com/documentation
+
 "CSS with superpowers"
 compiles into plain CSS so browsers can read it.
     possible with Live Sass Compiler VS Code Extension
@@ -29,3 +31,13 @@ sass file named with leading underscore
 functions should be used to compute/return values
 mixins should define styles
 mixins good for light/dark themes
+
+## rememeber
+
+- variables
+- maps
+- partials
+- functions
+- mixins
+- extends
+- math operations
