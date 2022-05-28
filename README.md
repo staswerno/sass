@@ -11,7 +11,7 @@ there are 2 sass filetypes:
     .scss - easiest/most popular
     indented (.sass) - original
 
-to run: click on 'watch sass' at bottom of ide
+to run: click on 'watch sass' at bottom of ide  
 don't modify the css file!
 
 ## variables
