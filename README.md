@@ -8,7 +8,7 @@ compiles into plain CSS so browsers can read it.
 valid css is also valid sass
 
 there are 2 sass filetypes:
-    .scss - easiest/most poppulat
+    .scss - easiest/most popular
     indented (.sass) - original
 
 to run: click on 'watch sass' at bottom of ide
